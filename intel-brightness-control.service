@@ -1,0 +1,9 @@
+[Unit]
+Description=A small systemd service to change access to screen brightness file.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/lib/intel-brightness-control.sh
+
+[Install]
+WantedBy=multi-user.target
